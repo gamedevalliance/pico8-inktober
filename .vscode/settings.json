@@ -1,0 +1,15 @@
+{
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": ".lua",
+                "cmd": "bash ${workspaceFolder}/build-tools-sway.sh ${fileDirname}"
+            }
+        ]
+    },
+    "explorer.sortOrder": "default",
+    "files.associations": {
+        "**/*.lua": "pico8p8"
+    },
+    "files.autoSave": "off"
+}
