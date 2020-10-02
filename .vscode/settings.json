@@ -3,7 +3,7 @@
         "commands": [
             {
                 "match": ".lua",
-                "cmd": "bash ${workspaceFolder}/build-tools-sway.sh ${fileDirname}"
+                "cmd": "powershell ${workspaceFolder}/build-tools-windows.ps1 ${fileDirname}"
             }
         ]
     },
