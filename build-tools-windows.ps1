@@ -8,4 +8,6 @@ $p8Path = $env:APPDATA + "/pico-8/carts/inktober/" + $projectName + ".p8"
 
 (Get-Content -path $p8Path -Raw) -replace '(?ms)(?:__lua__)(.*)(?:__gfx__)', "__lua__`n$result`n__gfx__" | Set-Content -Path $p8Path
 
+Start-Sleep -Milliseconds 300
+
 Start-Process .\reload-pico8.exe
